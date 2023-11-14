@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libros y Bibliotecas</title>
+</head>
+<body>
+    <h1>Gestión de Libros y Bibliotecas</h1>
+
+    <section>
+        <h2>Agregar Libro</h2>
+        <form id="formLibro">
+            <input type="text" id="nombreLibro" name="nombreLibro" placeholder="Nombre del Libro">
+            <input type="text" id="autorLibro" name="autorLibro" placeholder="Autor del Libro">
+            <input type="text" id="bibliotecaLibro" name="bibliotecaLibro" placeholder="Biblioteca">
+            <button type="submit">Agregar Libro</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Listado de Libros</h2>
+        <table id="tablaLibros">
+            <tr>
+                <th>Nombre</th>
+                <th>Autor</th>
+                <th>Biblioteca</th>
+            </tr>
+            <!-- Aquí se insertarían los datos de los libros -->
+        </table>
+    </section>
+
+    <section>
+        <h2>Agregar Biblioteca</h2>
+        <form id="formBiblioteca">
+            <input type="text" id="nombreBiblioteca" name="nombreBiblioteca" placeholder="Nombre de la Biblioteca">
+            <input type="text" id="direccionBiblioteca" name="direccionBiblioteca" placeholder="Dirección">
+            <input type="text" id="ciudadBiblioteca" name="ciudadBiblioteca" placeholder="Ciudad">
+            <button type="submit">Agregar Biblioteca</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Listado de Bibliotecas</h2>
+        <table id="tablaBibliotecas">
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Ciudad</th>
+            </tr>
+            <!-- Aquí se insertarían los datos de las bibliotecas -->
+        </table>
+    </section>
+
+</body>
+</html>
