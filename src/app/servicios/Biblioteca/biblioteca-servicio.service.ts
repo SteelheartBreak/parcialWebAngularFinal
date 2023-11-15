@@ -12,7 +12,10 @@ export class BibliotecaServicioService {
   constructor(private http: HttpClient) { }
 
   
-  getLibros(): Observable<Biblioteca[]> {
-    return this.http.get<Biblioteca[]>('http://localhost:8090/biblioteca/all');
+  getBibliotecas(): Observable<Biblioteca[]> {
+    return this.http.get<Biblioteca[]>('http://localhost:8080/biblioteca/all');
+  }
+  agregarBiblioteca(biblio: Biblioteca) {
+    return this.http.post('http://localhost:8080/biblioteca/add', biblio);
   }
 }

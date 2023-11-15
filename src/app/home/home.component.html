@@ -24,9 +24,14 @@
                 <th>Autor</th>
                 <th>Biblioteca</th>
             </tr>
-            <!-- Aquí se insertarían los datos de los libros -->
+            <tr *ngFor="let libro of libros">
+                <td>{{ libro.nombre }}</td>
+                <td>{{ libro.autor }}</td>
+                <td>{{ libro.biblioteca }}</td>
+            </tr>
         </table>
     </section>
+    
 
     <section>
         <h2>Agregar Biblioteca</h2>
@@ -46,9 +51,14 @@
                 <th>Dirección</th>
                 <th>Ciudad</th>
             </tr>
-            <!-- Aquí se insertarían los datos de las bibliotecas -->
+            <tr *ngFor="let biblioteca of bibliotecas">
+                <td>{{ biblioteca.nombre }}</td>
+                <td>{{ biblioteca.direccion }}</td>
+                <td>{{ biblioteca.ciudad }}</td>
+            </tr>
         </table>
     </section>
+    
 
 </body>
 </html>
